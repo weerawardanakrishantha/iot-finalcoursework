@@ -1,0 +1,65 @@
+[
+    {
+        "itemCod":"B1016",
+        "itemName":"Crispy Chicken Submarine(large)",
+        "price":2000.0,
+        "discount":0.0,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCod":"B1017",
+        "itemName":"Crispy Chicken Submarine(large)",
+        "price":2000.0,
+        "discount":0.0,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCod":"B1018",
+        "itemName":"Chicken Submarine(large)",
+        "price":1800.0,
+        "discount":0.03,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCod":"B1019",
+        "itemName":"Chicken Submarine(Regular)",
+        "price":1400.0,
+        "discount":0.0,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCod":"B1020",
+        "itemName":"Grilled Submarine",
+        "price":2300.0,
+        "discount":0.0,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCod":"B1021",
+        "itemName":"Cheese Submarine",
+        "price":2200.0,
+        "discount":0.0,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCod":"B1022",
+        "itemName":"Double Cheese n Chicken Submarine",
+        "price":1900.0,
+        "discount":0.16,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCod":"B1023",
+        "itemName":"Special Horgie Submarine",
+        "price":1800.0,
+        "discount":0.0,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCod":"B1024",
+        "itemName":"MOS Special Submarine",
+        "price":3000.0,
+        "discount":0.0,
+        "expiry":"2025-04-10"
+    }
+]

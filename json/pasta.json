@@ -1,0 +1,51 @@
+[
+    {
+        "itemCode":"B1031",
+        "itemName":"Chicken n Cheese Pasta",
+        "price":1600.00,
+        "discount":0.15,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCode":"B1032",
+        "itemName":"Chicken Penne Pasta",
+        "price":1700.00,
+        "discount":0.0,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCode":"B1033",
+        "itemName":"Ground Turkey Pasta Bake",
+        "price":2900.00,
+        "discount":0.10,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCode":"B1034",
+        "itemName":"Creamy Shrimp Pasta",
+        "price":2000.00,
+        "discount":0.0,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCode":"B1035",
+        "itemName":"Lemon Butter Pasta",
+        "price":1950.00,
+        "discount":0.0,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCode":"B1036",
+        "itemName":"Tagliatell Pasta",
+        "price":2400.00,
+        "discount":0.01,
+        "expiry":"2025-04-10"
+    },
+    {
+        "itemCode":"B1037",
+        "itemName":"Baked Ravioli",
+        "price":2000.00,
+        "discount":0.01,
+        "expiry":"2025-04-10"
+    }
+]

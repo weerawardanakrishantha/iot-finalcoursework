@@ -1,0 +1,26 @@
+[
+    {
+        "itemCode":"B1044",
+        "itemName":"Pepsi (330ml)",
+        "price":990.00,
+        "discount":0.05
+    },
+    {
+        "itemCode":"B1045",
+        "itemName":"Coca-Cola (330ml)",
+        "price":123.00,
+        "discount":0.0
+    },
+    {
+        "itemCode":"B1046",
+        "itemName":"Sprite (330ml)",
+        "price":1500.00,
+        "discount":0.03
+    },
+    {
+        "itemCode":"B1044",
+        "itemName":"Mirinda (330ml)",
+        "price":850.00,
+        "discount":0.07
+    }
+]
