@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(247, 217, 226);
+    background-color: rgb(227, 201, 209);
 }
 .img1{
     margin-left: 30px;
@@ -14,7 +14,7 @@ body{
     font-family: sans-serif;
     font-size: 40px;
     font-weight: 700;
-    color: rgb(226, 103, 103);
+    color: rgb(69, 50, 50);;
 }
 .ul1{
     margin-left: 1050px;
@@ -25,7 +25,7 @@ body{
     display: inline;
     margin-left: 20px;
     font-size: 25px;
-    color: rgb(235, 108, 108);
+    color: rgb(69, 50, 50);;
     font-weight: 600;
 }
 .tbl1{
@@ -36,14 +36,14 @@ body{
     height: 5px;
     margin: 0;
     margin-top: 60px;
-    background-color: palevioletred;
+    background-color: rgb(91, 52, 65);
     border: none
 }
 .h2{
     margin-left: 100px;
     font-size: 40px;
     font-weight: 700;
-    color: brown;
+    color: rgb(69, 50, 50);;
 }
 .p1{
     margin-left: 100px;
@@ -55,4 +55,54 @@ body{
 .img2{
     width: 650px;
     margin-left: 175px;
+    border-radius: 15px;
+}
+.h3{
+    margin-left: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 40px;
+    color: rgb(69, 50, 50);
+}
+
+.img3{
+    width: 350px;
+    height: 250px;
+    margin-top: 40px;
+    border-radius: 25px;
+}
+.tbl2{
+    width: 100%;
+    padding: 20px;
+    margin-left: 100px;
+}
+.tbl4{
+    width: 100%;
+}
+.img4{
+    width: 500px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 150px;
+    border-radius: 100px;
+}
+.h4{
+    margin-top: 150px;
+    margin-left: 200px;
+    color: rgb(69, 50, 50);
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.p2{
+    margin-left: 200px;
+    width: 600px;
+    color: rgb(69, 50, 50);
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.footer{
+    margin-top: 40px;
+    height: 70px;  
+    background-color: rgb(120, 79, 79);
 }
