@@ -7,8 +7,33 @@
     <body>   
         <div class="d1">
             <a class="a1" href="index.html">Home</a>
-        </div>    
-        
+        </div> 
+        <div class="d2">
+            <h1 class="h1-1">Burgers</h1>
+            <table class="tbl1" id="tbl1">
+            </table>
+        </div>
+        <div class="d3">
+            <button class="btn1" onclick="displayAddBurgerForm()">Add Burger</button>
+        </div>
+        <div class="d4" id="d4">
+            <h2 class="h2-1">Add Burger</h2>
+            <input class="inp1" type="text" placeholder="Item Code" id="code"><br><br>
+            <input class="inp1" type="text" placeholder="Item Name" id="name"><br><br>
+            <input class="inp1" type="text" placeholder="Price" id="price"><br><br>
+            <input class="inp1" type="text" placeholder="Discount" id="discount"><br><br>
+            <input class="inp1" type="text" placeholder="Expiry Date" id="expiryDate"><br><br>
+            <input type="button" value="Add" class="btn2" onclick="addBurger()">
+        </div>
+        <div class="d5" id="d5">
+            <h2 class="h2-1">Update Burger</h2>
+            <input class="inp1" type="text" placeholder="Item Code" id="codeUpdate"><br><br>
+            <input class="inp1" type="text" placeholder="Item Name" id="nameUpdate"><br><br>
+            <input class="inp1" type="text" placeholder="Price" id="priceUpdate"><br><br>
+            <input class="inp1" type="text" placeholder="Discount" id="discountUpdate"><br><br>
+            <input class="inp1" type="text" placeholder="Expiry Date" id="expiryDateUpdate"><br><br>
+            <input type="button" value="Update" class="btn2" onclick="updateBurger()">
+        </div>
         
 
         <script src="js/food.js"></script>
