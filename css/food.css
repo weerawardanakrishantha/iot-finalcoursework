@@ -154,3 +154,151 @@ td{
     margin-left: 450px; 
     display: none;
 }
+/* fries */
+.d10{
+    margin-top: 80px;
+    margin-left: 200px;  
+}
+.h1-3{
+    margin-left: 250px;
+    color: rgb(107, 56, 73); 
+}
+.tbl3{
+    width: 70%;
+    border: 2px solid rgb(114, 59, 77);
+    border-collapse: collapse;    
+}
+.btn5{
+    margin-top: 50px;
+    margin-left: 550px;
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: rgb(150, 81, 104);
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.d12{
+    margin-top: 50px;
+    margin-left: 450px; 
+    display: none; 
+}
+.h2-3{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(145, 77, 100);
+}
+.inp3{
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(126, 71, 89);
+    border: 1px solid rgb(141, 74, 96);
+}
+.btn6{
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(89, 36, 54);
+    font-weight: 800;
+    background-color: rgb(164, 78, 107); 
+}
+.d13{
+    margin-top: 50px;
+    margin-left: 450px; 
+    display: none; 
+}
+.btn7{
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(89, 36, 54);
+    font-weight: 800;
+    background-color: rgb(164, 78, 107);  
+}
+/* fries */
+
+/* pasta */
+
+.d14{
+    margin-top: 80px;
+    margin-left: 200px;  
+}
+.h1-4{
+    margin-left: 250px;
+    color: rgb(107, 56, 73); 
+}
+.tbl4{
+    width: 70%;
+    border: 2px solid rgb(114, 59, 77);
+    border-collapse: collapse;    
+}
+.btn8{
+    margin-top: 50px;
+    margin-left: 550px;
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: rgb(150, 81, 104);
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700; 
+}
+.d16{
+    margin-top: 50px;
+    margin-left: 450px;  
+    display: none; 
+}
+.h2-4{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(145, 77, 100); 
+}
+.inp4{
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(126, 71, 89);
+    border: 1px solid rgb(141, 74, 96);  
+}
+.btn9{
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(89, 36, 54);
+    font-weight: 800;
+    background-color: rgb(164, 78, 107);  
+}
+.d17{
+    margin-top: 50px;
+    margin-left: 450px; 
+    display: none;
+}
+.btn10{
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(89, 36, 54);
+    font-weight: 800;
+    background-color: rgb(164, 78, 107); 
+}
+/* pasta */
+
+/* chicken */
+
+/* chicken */

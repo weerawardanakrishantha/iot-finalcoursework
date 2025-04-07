@@ -60,6 +60,7 @@ function addBurger(){
 
 function editBurger(index){
     document.getElementById("d5").style.display="block";
+    document.getElementById("codeUpdate").disabled=true;
 
     document.getElementById("codeUpdate").value=burgerList[index].itemCode;
     document.getElementById("nameUpdate").value=burgerList[index].itemName;
@@ -69,6 +70,9 @@ function editBurger(index){
 }
 
 function updateBurger(){
+
+    
+
     let updateCode=document.getElementById("codeUpdate").value;
     let updateName=document.getElementById("nameUpdate").value;
     let updatePrice=document.getElementById("priceUpdate").value;
@@ -158,6 +162,7 @@ function addSubmarine(){
 
 function editSubmarine(index){
     document.getElementById("d9").style.display="block";
+    document.getElementById("codeUpdateSubmarine").disabled=true;
 
     document.getElementById("codeUpdateSubmarine").value=submarineList[index].itemCod;
     document.getElementById("nameUpdateSubmarine").value=submarineList[index].itemName;
@@ -197,4 +202,205 @@ function deleteSubmarine(index){
 //fries
 
 let friesList=[];
+
+function readFriesList(){
+    fetch("json/fries.json")
+    .then(res=>res.json())
+    .then(data=>{
+        friesList=data;
+        loadFriesData();
+    })
+}
+
+readFriesList();
+
+function loadFriesData(){
+    let tblFries=document.getElementById("tbl3");
+
+    let body="";
+
+    friesList.forEach((element,index)=>{
+        body+=`
+            <tr>
+                <td>${element.itemCod}</td>
+                <td>${element.itemName}</td>
+                <td>${element.price}</td>
+                <td>${element.discount}</td>
+                <td>${element.expiry}</td>
+                <td>
+                    <button class="btnEdit" onclick="editFries(${index})">Edit</button>
+                    <button class="btnDelete" onclick="deleteFries(${index})">Delete</button>
+                </td>
+            </tr>
+        `
+    })
+    tblFries.innerHTML=body;
+}
+
+function displayAddFriesForm(){
+    document.getElementById("d12").style.display="block";
+}
+
+function addFries(){
+    let friesCode=document.getElementById("codeFries").value;
+    let friesName=document.getElementById("nameFries").value;
+    let friesPrice=document.getElementById("priceFries").value;
+    let friesDiscount=document.getElementById("discountFries").value;
+    let friesExpiryDate=document.getElementById("expiryDateFries").value;
+    
+    friesList.push({
+        itemCod:friesCode,
+        itemName:friesName,
+        price:friesPrice,
+        discount:friesDiscount,
+        expiry:friesExpiryDate
+    })
+    loadFriesData();
+    document.getElementById("d12").style.display="none";
+}
+
+function editFries(index){
+    document.getElementById("d13").style.display="block";
+    document.getElementById("codeUpdateFries").disabled=true;
+
+    document.getElementById("codeUpdateFries").value=friesList[index].itemCod;
+    document.getElementById("nameUpdateFries").value=friesList[index].itemName;
+    document.getElementById("priceUpdateFries").value=friesList[index].price;
+    document.getElementById("discountUpdateFries").value=friesList[index].discount;
+    document.getElementById("expiryDateUpdateFries").value=friesList[index].expiry;    
+}
+function updateFries(){
+    let updateCodeFries=document.getElementById("codeUpdateFries").value;
+    let updateNameFries=document.getElementById("nameUpdateFries").value;
+    let updatePriceFries=document.getElementById("priceUpdateFries").value;
+    let updateDiscountFries=document.getElementById("discountUpdateFries").value;
+    let updateExpiryDateFries=document.getElementById("expiryDateUpdateFries").value;
+    
+    friesList.forEach((element,index)=>{
+        if(element.itemCod===updateCodeFries){           
+            friesList[index]={
+                itemCod:updateCodeFries,
+                itemName:updateNameFries,
+                price:updatePriceFries,
+                discount:updateDiscountFries,
+                expiry:updateExpiryDateFries
+            }
+        }
+    })  
+    loadFriesData();
+    document.getElementById("d13").style.display="none";  
+}
+
+function deleteFries(index){
+    alert("do you want delete "+friesList[index].itemName)
+    friesList.splice(index,1);
+    loadFriesData();  
+}
+//fries
+
+//pasta
+let pastaList=[];
+
+function readPastaList(){
+    fetch("json/pasta.json")
+    .then(res=>res.json())
+    .then(data=>{
+        pastaList=data;
+        loadPastaData();
+    })
+}
+
+readPastaList();
+
+function loadPastaData(){
+    let tblPasta=document.getElementById("tbl4");
+
+    let body="";
+
+    pastaList.forEach((element,index)=>{
+        body+=`
+            <tr>
+                <td>${element.itemCode}</td>
+                <td>${element.itemName}</td>
+                <td>${element.price}</td>
+                <td>${element.discount}</td>
+                <td>${element.expiry}</td>
+                <td>
+                    <button class="btnEdit" onclick="editPasta(${index})">Edit</button>
+                    <button class="btnDelete" onclick="deletePasta(${index})">Delete</button>
+                </td>
+            </tr>
+        `
+    })
+    tblPasta.innerHTML=body;
+}
+
+function displayAddPastaForm(){
+    document.getElementById("d16").style.display="block";
+}
+
+function addPasta(){
+    let pastaCode=document.getElementById("codePasta").value;
+    let pastaName=document.getElementById("namePasta").value;
+    let pastaPrice=document.getElementById("pricePasta").value;
+    let pastaDiscount=document.getElementById("discountPasta").value;
+    let pastaExpiryDate=document.getElementById("expiryDatePasta").value;
+    
+    pastaList.push({
+        itemCode:pastaCode,
+        itemName:pastaName,
+        price:pastaPrice,
+        discount:pastaDiscount,
+        expiry:pastaExpiryDate
+    })
+    loadPastaData();
+    document.getElementById("d16").style.display="none";
+}
+
+function editPasta(index){
+    document.getElementById("d17").style.display="block";
+    document.getElementById("codeUpdatePasta").disabled=true;
+
+    document.getElementById("codeUpdatePasta").value=pastaList[index].itemCode;
+    document.getElementById("nameUpdatePasta").value=pastaList[index].itemName;
+    document.getElementById("priceUpdatePasta").value=pastaList[index].price;
+    document.getElementById("discountUpdatePasta").value=pastaList[index].discount;
+    document.getElementById("expiryDateUpdatePasta").value=pastaList[index].expiry;    
+}
+
+function updatePasta(){
+    let updateCodePasta=document.getElementById("codeUpdatePasta").value;
+    let updateNamePasta=document.getElementById("nameUpdatePasta").value;
+    let updatePricePasta=document.getElementById("priceUpdatePasta").value;
+    let updateDiscountPasta=document.getElementById("discountUpdatePasta").value;
+    let updateExpiryDatePasta=document.getElementById("expiryDateUpdatePasta").value;
+    
+    pastaList.forEach((element,index)=>{
+        if(element.itemCode===updateCodePasta){           
+            pastaList[index]={
+                itemCode:updateCodePasta,
+                itemName:updateNamePasta,
+                price:updatePricePasta,
+                discount:updateDiscountPasta,
+                expiry:updateExpiryDatePasta
+            }
+        }
+    })  
+    loadPastaData();
+    document.getElementById("d17").style.display="none";  
+}
+
+function deletePasta(index){
+    alert("do you want delete "+pastaList[index].itemName)
+    pastaList.splice(index,1);
+    loadPastaData();  
+}
+
+//pasta
+
+//chicken
+
+
+//chicken
+
 
