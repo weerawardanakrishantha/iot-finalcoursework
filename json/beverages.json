@@ -3,24 +3,28 @@
         "itemCode":"B1044",
         "itemName":"Pepsi (330ml)",
         "price":990.00,
-        "discount":0.05
+        "discount":0.05,
+        "expiray":"2025-04-10"
     },
     {
         "itemCode":"B1045",
         "itemName":"Coca-Cola (330ml)",
         "price":123.00,
-        "discount":0.0
+        "discount":0.0,
+        "expiray":"2025-04-10"
     },
     {
         "itemCode":"B1046",
         "itemName":"Sprite (330ml)",
         "price":1500.00,
-        "discount":0.03
+        "discount":0.03,
+        "expiray":"2025-04-10"
     },
     {
         "itemCode":"B1044",
         "itemName":"Mirinda (330ml)",
         "price":850.00,
-        "discount":0.07
+        "discount":0.07,
+        "expiray":"2025-04-10"
     }
 ]

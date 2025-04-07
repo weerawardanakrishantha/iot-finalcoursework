@@ -400,7 +400,200 @@ function deletePasta(index){
 
 //chicken
 
+let chickenList=[];
+
+function readChickenList(){
+    fetch("json/chicken.json")
+    .then(res=>res.json())
+    .then(data=>{
+        chickenList=data;
+        loadChickenData();
+    })
+}
+
+readChickenList();
+
+function loadChickenData(){
+    let tblChicken=document.getElementById("tbl5");
+
+    let body="";
+
+    chickenList.forEach((element,index)=>{
+        body+=`
+            <tr>
+                <td>${element.itemCode}</td>
+                <td>${element.itemName}</td>
+                <td>${element.price}</td>
+                <td>${element.discount}</td>
+                <td>${element.expiry}</td>
+                <td>
+                    <button class="btnEdit" onclick="editChicken(${index})">Edit</button>
+                    <button class="btnDelete" onclick="deleteChicken(${index})">Delete</button>
+                </td>
+            </tr>
+        `
+    })
+    tblChicken.innerHTML=body;
+}
+
+function displayAddChickenForm(){
+    document.getElementById("d20").style.display="block";
+}
+
+function addChicken(){
+    let chickenCode=document.getElementById("codeChicken").value;
+    let chickenName=document.getElementById("nameChicken").value;
+    let chickenPrice=document.getElementById("priceChicken").value;
+    let chickenDiscount=document.getElementById("discountChicken").value;
+    let chickenExpiryDate=document.getElementById("expiryDateChicken").value;
+    
+    chickenList.push({
+        itemCode:chickenCode,
+        itemName:chickenName,
+        price:chickenPrice,
+        discount:chickenDiscount,
+        expiry:chickenExpiryDate
+    })
+    loadChickenData();
+    document.getElementById("d20").style.display="none";
+}
+
+function editChicken(index){
+    document.getElementById("d21").style.display="block";
+    document.getElementById("codeUpdateChicken").disabled=true;
+
+    document.getElementById("codeUpdateChicken").value=chickenList[index].itemCode;
+    document.getElementById("nameUpdateChicken").value=chickenList[index].itemName;
+    document.getElementById("priceUpdateChicken").value=chickenList[index].price;
+    document.getElementById("discountUpdateChicken").value=chickenList[index].discount;
+    document.getElementById("expiryDateUpdateChicken").value=chickenList[index].expiry;    
+}
+
+function updateChicken(){
+    let updateCodeChicken=document.getElementById("codeUpdateChicken").value;
+    let updateNameChicken=document.getElementById("nameUpdateChicken").value;
+    let updatePriceChicken=document.getElementById("priceUpdateChicken").value;
+    let updateDiscountChicken=document.getElementById("discountUpdateChicken").value;
+    let updateExpiryDateChicken=document.getElementById("expiryDateUpdateChicken").value;
+    
+    chickenList.forEach((element,index)=>{
+        if(element.itemCode===updateCodeChicken){           
+            chickenList[index]={
+                itemCode:updateCodeChicken,
+                itemName:updateNameChicken,
+                price:updatePriceChicken,
+                discount:updateDiscountChicken,
+                expiry:updateExpiryDateChicken
+            }
+        }
+    })  
+    loadChickenData();
+    document.getElementById("d21").style.display="none";  
+}
+
+function deleteChicken(index){
+    alert("do you want delete "+chickenList[index].itemName)
+    chickenList.splice(index,1);
+    loadChickenData();  
+}
 
 //chicken
 
+//beverages
 
+let beveragesList=[];
+
+function readBeveragesList(){
+    fetch("json/beverages.json")
+    .then(res=>res.json())
+    .then(data=>{
+        beveragesList=data;
+        loadBeveragesData();
+    })
+}
+
+readBeveragesList();
+
+function loadBeveragesData(){
+    let tblBeverages=document.getElementById("tbl6");
+
+    let body="";
+
+    beveragesList.forEach((element,index)=>{
+        body+=`
+            <tr>
+                <td>${element.itemCode}</td>
+                <td>${element.itemName}</td>
+                <td>${element.price}</td>
+                <td>${element.discount}</td>
+                <td>${element.expiray}</td>
+                <td>
+                    <button class="btnEdit" onclick="editBeverages(${index})">Edit</button>
+                    <button class="btnDelete" onclick="deleteBeverages(${index})">Delete</button>
+                </td>
+            </tr>
+        `
+    })
+    tblBeverages.innerHTML=body;
+}
+
+function displayAddBeveragesForm(){
+    document.getElementById("d24").style.display="block";
+}
+
+function addBeverage(){
+    let beverageCode=document.getElementById("codeBeverage").value;
+    let beverageName=document.getElementById("nameBeverage").value;
+    let beveragePrice=document.getElementById("priceBeverage").value;
+    let beverageDiscount=document.getElementById("discountBeverage").value;
+    let beverageExpiryDate=document.getElementById("expiryDateBeverage").value;
+    
+    beveragesList.push({
+        itemCode:beverageCode,
+        itemName:beverageName,
+        price:beveragePrice,
+        discount:beverageDiscount,
+        expiray:beverageExpiryDate
+    })
+    loadBeveragesData();
+    document.getElementById("d24").style.display="none";
+}
+
+function editBeverages(index){
+    document.getElementById("d25").style.display="block";
+    document.getElementById("codeUpdateBeverage").disabled=true;
+
+    document.getElementById("codeUpdateBeverage").value=beveragesList[index].itemCode;
+    document.getElementById("nameUpdateBeverage").value=beveragesList[index].itemName;
+    document.getElementById("priceUpdateBeverage").value=beveragesList[index].price;
+    document.getElementById("discountUpdateBeverage").value=beveragesList[index].discount;
+    document.getElementById("expiryDateUpdateBeverage").value=beveragesList[index].expiray;    
+}
+
+function updateBeverages(){
+    let updateCodeBeverage=document.getElementById("codeUpdateBeverage").value;
+    let updateNameBeverage=document.getElementById("nameUpdateBeverage").value;
+    let updatePriceBeverage=document.getElementById("priceUpdateBeverage").value;
+    let updateDiscountBeverage=document.getElementById("discountUpdateBeverage").value;
+    let updateExpiryDateBeverage=document.getElementById("expiryDateUpdateBeverage").value;
+    
+    beveragesList.forEach((element,index)=>{
+        if(element.itemCode===updateCodeBeverage){           
+            beveragesList[index]={
+                itemCode:updateCodeBeverage,
+                itemName:updateNameBeverage,
+                price:updatePriceBeverage,
+                discount:updateDiscountBeverage,
+                expiray:updateExpiryDateBeverage
+            }
+        }
+    })  
+    loadBeveragesData();
+    document.getElementById("d25").style.display="none";  
+}
+
+function deleteBeverages(index){
+    alert("do you want delete "+beveragesList[index].itemName)
+    beveragesList.splice(index,1);
+    loadBeveragesData();  
+}
