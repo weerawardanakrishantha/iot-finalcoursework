@@ -1,41 +1,41 @@
 [
     {
-        "itemCod":"B1025",
+        "itemCode":"B1025",
         "itemName":"Steak Fries(Large)",
         "price":1200.00,
         "discount":0.0,
         "expiry":"2025-04-10"
     },
     {
-        "itemCod":"B1026",
+        "itemCode":"B1026",
         "itemName":"Steak Fries(Medium)",
         "price":600.00,
         "discount":0.0,
         "expiry":"2025-04-10"
     },
     {
-        "itemCod":"B1027",
+        "itemCode":"B1027",
         "itemName":"French Fries(Large)",
         "price":800.00,
         "discount":0.0,
         "expiry":"2025-04-10"
     },
     {
-        "itemCod":"B1028",
+        "itemCode":"B1028",
         "itemName":"French Fries(Medium)",
         "price":650.00,
         "discount":0.0,
         "expiry":"2025-04-10"
     },
     {
-        "itemCod":"B1029",
+        "itemCode":"B1029",
         "itemName":"French Fries(Small)",
         "price":450.00,
         "discount":0.0,
         "expiry":"2025-04-10"
     },
     {
-        "itemCod":"B1030",
+        "itemCode":"B1030",
         "itemName":"Sweet Potato Fries(Large)",
         "price":600.00,
         "discount":0.0,

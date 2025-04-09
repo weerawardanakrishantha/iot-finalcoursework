@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "contact_number":"0773012457",
+        "name":"Danapala"
+    },
+    {
+        "id":2,
+        "contact_number":"0764012557",
+        "name":"Gunapala"
+    },
+    {
+        "id":3,
+        "contact_number":"0773422657",
+        "name":"Somapala"
+    },
+    {
+        "id":4,
+        "contact_number":"0770017451",
+        "name":"Siripala"
+    },
+    {
+        "id":5,
+        "contact_number":"0769052257",
+        "name":"Jinadasa"
+    },
+    {
+        "id":6,
+        "contact_number":"0763016757",
+        "name":"Somadasa"
+    }
+]

@@ -123,7 +123,7 @@ function laodSubmarineData(){
     submarineList.forEach((element,index)=>{
         body+=`
             <tr>
-                <td>${element.itemCod}</td>
+                <td>${element.itemCode}</td>
                 <td>${element.itemName}</td>
                 <td>${element.price}</td>
                 <td>${element.discount}</td>
@@ -150,7 +150,7 @@ function addSubmarine(){
     let submarineExpiryDate=document.getElementById("expiryDateSubmarine").value;
     
     submarineList.push({
-        itemCod:submarineCode,
+        itemCode:submarineCode,
         itemName:submarineName,
         price:submarinePrice,
         discount:submarineDiscount,
@@ -164,7 +164,7 @@ function editSubmarine(index){
     document.getElementById("d9").style.display="block";
     document.getElementById("codeUpdateSubmarine").disabled=true;
 
-    document.getElementById("codeUpdateSubmarine").value=submarineList[index].itemCod;
+    document.getElementById("codeUpdateSubmarine").value=submarineList[index].itemCode;
     document.getElementById("nameUpdateSubmarine").value=submarineList[index].itemName;
     document.getElementById("priceUpdateSubmarine").value=submarineList[index].price;
     document.getElementById("discountUpdateSubmarine").value=submarineList[index].discount;
@@ -179,9 +179,9 @@ function updateSubmarine(){
     let updateExpiryDateSubmarine=document.getElementById("expiryDateUpdateSubmarine").value;
     
     submarineList.forEach((element,index)=>{
-        if(element.itemCod===updateCodeSubmarine){           
+        if(element.itemCode===updateCodeSubmarine){           
             submarineList[index]={
-                itemCod:updateCodeSubmarine,
+                itemCode:updateCodeSubmarine,
                 itemName:updateNameSubmarine,
                 price:updatePriceSubmarine,
                 discount:updateDiscountSubmarine,
@@ -222,7 +222,7 @@ function loadFriesData(){
     friesList.forEach((element,index)=>{
         body+=`
             <tr>
-                <td>${element.itemCod}</td>
+                <td>${element.itemCode}</td>
                 <td>${element.itemName}</td>
                 <td>${element.price}</td>
                 <td>${element.discount}</td>
@@ -249,7 +249,7 @@ function addFries(){
     let friesExpiryDate=document.getElementById("expiryDateFries").value;
     
     friesList.push({
-        itemCod:friesCode,
+        itemCode:friesCode,
         itemName:friesName,
         price:friesPrice,
         discount:friesDiscount,
@@ -263,7 +263,7 @@ function editFries(index){
     document.getElementById("d13").style.display="block";
     document.getElementById("codeUpdateFries").disabled=true;
 
-    document.getElementById("codeUpdateFries").value=friesList[index].itemCod;
+    document.getElementById("codeUpdateFries").value=friesList[index].itemCode;
     document.getElementById("nameUpdateFries").value=friesList[index].itemName;
     document.getElementById("priceUpdateFries").value=friesList[index].price;
     document.getElementById("discountUpdateFries").value=friesList[index].discount;
@@ -277,9 +277,9 @@ function updateFries(){
     let updateExpiryDateFries=document.getElementById("expiryDateUpdateFries").value;
     
     friesList.forEach((element,index)=>{
-        if(element.itemCod===updateCodeFries){           
+        if(element.itemCode===updateCodeFries){           
             friesList[index]={
-                itemCod:updateCodeFries,
+                itemCode:updateCodeFries,
                 itemName:updateNameFries,
                 price:updatePriceFries,
                 discount:updateDiscountFries,
@@ -526,7 +526,7 @@ function loadBeveragesData(){
                 <td>${element.itemName}</td>
                 <td>${element.price}</td>
                 <td>${element.discount}</td>
-                <td>${element.expiray}</td>
+                <td>${element.expiry}</td>
                 <td>
                     <button class="btnEdit" onclick="editBeverages(${index})">Edit</button>
                     <button class="btnDelete" onclick="deleteBeverages(${index})">Delete</button>
@@ -553,7 +553,7 @@ function addBeverage(){
         itemName:beverageName,
         price:beveragePrice,
         discount:beverageDiscount,
-        expiray:beverageExpiryDate
+        expiry:beverageExpiryDate
     })
     loadBeveragesData();
     document.getElementById("d24").style.display="none";
@@ -567,7 +567,7 @@ function editBeverages(index){
     document.getElementById("nameUpdateBeverage").value=beveragesList[index].itemName;
     document.getElementById("priceUpdateBeverage").value=beveragesList[index].price;
     document.getElementById("discountUpdateBeverage").value=beveragesList[index].discount;
-    document.getElementById("expiryDateUpdateBeverage").value=beveragesList[index].expiray;    
+    document.getElementById("expiryDateUpdateBeverage").value=beveragesList[index].expiry;    
 }
 
 function updateBeverages(){
@@ -584,7 +584,7 @@ function updateBeverages(){
                 itemName:updateNameBeverage,
                 price:updatePriceBeverage,
                 discount:updateDiscountBeverage,
-                expiray:updateExpiryDateBeverage
+                expiry:updateExpiryDateBeverage
             }
         }
     })  
