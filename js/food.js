@@ -69,9 +69,7 @@ function editBurger(index){
     document.getElementById("expiryDateUpdate").value=burgerList[index].expiry;    
 }
 
-function updateBurger(){
-
-    
+function updateBurger(){    
 
     let updateCode=document.getElementById("codeUpdate").value;
     let updateName=document.getElementById("nameUpdate").value;

@@ -7,7 +7,37 @@
     <body>
         <div class="d1">
             <a class="a1" href="index.html">Home</a>
+        </div>
+        <div class="d2">
+            <h1 class="h1-1">Customers</h1>
+            <table class="tbl1" id="tbl1">
+            </table>
         </div> 
+
+        <div class="d3">
+            <button class="btn1" onclick="displayAddCustomerForm()">Add Customer</button>
+        </div>
+        <div class="d4" id="d4">
+            <h2 class="h2-1">Add Customer</h2>
+            <input class="inp1" type="text" placeholder="" disabled id="id"><br><br>
+            <input class="inp1" type="text" placeholder="Customer Name" id="name"><br><br>
+            <input class="inp1" type="text" placeholder="Contact Number" id="contactNumber"><br><br>        
+            <input type="button" value="Add Customer" class="btn2" onclick="addCustomer()">
+        </div>
+
+        <div class="d5" id="d5">
+            <h2 class="h2-1">Update Customer</h2>
+            <input class="inp1" type="text" placeholder="" id="idUpdate"><br><br>            
+            <input class="inp1" type="text" placeholder="Customer Name" id="nameUpdate"><br><br>  
+            <input class="inp1" type="text" placeholder="Contact Number" id="contactNumberUpdate"><br><br>                     
+            <input type="button" value="Update Customer" class="btn3" onclick="updateCustomer()">
+        </div>
+
+        <div id="d6" class="d6">
+            <table class="tbl2" id="tbl2">
+
+            </table>
+        </div>
 
         <script src="js/customer.js"></script>
     </body>
